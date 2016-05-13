@@ -10,7 +10,7 @@ Create public/private keypair (`server.crt` and `server.key`):
 
     ./create_keys.sh
 
-Install dependency - pyOpenSSL:
+Install dependencies - pyOpenSSL and msgpack:
 
     pip3 install -r requirements.txt
 
