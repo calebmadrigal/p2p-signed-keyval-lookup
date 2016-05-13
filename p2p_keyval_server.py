@@ -79,9 +79,6 @@ class DistKeyValServer:
         self.db[key] = (val, val_signature)
 
 
-
-
-
 if __name__ == '__main__':
     server = DistKeyValServer()
     server.set_key('a', '1')

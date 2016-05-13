@@ -10,8 +10,8 @@ import OpenSSL
 
 def get_public_key(path):
     with open(path, 'r') as f:
-        private_key = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, f.read())
-    return private_key
+        public_key = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, f.read())
+    return public_key
 
 
 def verify_signature(public_key, signature_base64, data, digest='sha256'):
@@ -191,3 +191,4 @@ if __name__ == '__main__':
             client.get_peers()
         i += 1
         time.sleep(5)
+
